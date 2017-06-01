@@ -1,0 +1,5 @@
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Libreriab\bin\Debug\Libreriab.dll
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Libreriab\bin\Debug\Libreriab.pdb
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Libreriab\obj\Debug\Libreriab.csprojResolveAssemblyReference.cache
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Libreriab\obj\Debug\Libreriab.dll
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Libreriab\obj\Debug\Libreriab.pdb
