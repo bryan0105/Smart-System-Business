@@ -1,0 +1,13 @@
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Aprendiendo C.exe.config
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Aprendiendo C.exe
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Aprendiendo C.pdb
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo C.csprojResolveAssemblyReference.cache
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo_C.Form1.resources
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo_C.Properties.Resources.resources
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo C.csproj.GenerateResource.Cache
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo C.exe
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo C.pdb
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Libreriab.dll
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Libreriab.pdb
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
