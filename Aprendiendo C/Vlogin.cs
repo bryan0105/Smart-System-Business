@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 using Libreriab;
 namespace Aprendiendo_C
 {
-    public partial class Form1 : Form
+    public partial class Vlogin : Form
     {
-        public Form1()
+        public Vlogin()
         {
             InitializeComponent();
         }
@@ -22,11 +22,11 @@ namespace Aprendiendo_C
         {
             try
             {
-                string CMD = string.Format("Select * from USUARIOS WHERE usuario='{0}' AND clave='{1}'", txtUsuario.Text.Trim(), txtContra.Text.Trim());
+                string CMD = string.Format("Select COD_USUARIO, CLAVE from USUARIOS WHERE cod_usuario='{0}' AND clave='{1}'", txtUsuario.Text.Trim(), txtContra.Text.Trim());
 
                 DataSet ds = Utileria.Ejecutar(CMD);
 
-                string cuenta = ds.Tables[0].Rows[0]["usuario"].ToString().Trim();
+                string cuenta = ds.Tables[0].Rows[0]["cod_usuario"].ToString().Trim();
                 string contra = ds.Tables[0].Rows[0]["clave"].ToString().Trim();
 
                 if (cuenta == txtUsuario.Text.Trim() && contra == txtContra.Text.Trim())
@@ -40,7 +40,7 @@ namespace Aprendiendo_C
                 
 
             }
-            catch(SqlException error)
+            catch(Exception error)
             {
                 MessageBox.Show(error.Message);
             }
@@ -63,7 +63,7 @@ namespace Aprendiendo_C
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -96,6 +96,11 @@ namespace Aprendiendo_C
         private void txtContra_Click(object sender, EventArgs e)
         {
             txtContra.Text = "";
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
         }
     }
 }

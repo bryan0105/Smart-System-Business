@@ -63,6 +63,16 @@ namespace Aprendiendo_C.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap log {
+            get {
+                object obj = ResourceManager.GetObject("log", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Sistema_de_cotizacion {
             get {
                 object obj = ResourceManager.GetObject("Login-Sistema-de-cotizacion", resourceCulture);

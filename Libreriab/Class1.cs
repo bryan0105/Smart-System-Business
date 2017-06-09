@@ -13,7 +13,7 @@ namespace Libreriab
     {
         public static DataSet Ejecutar(string cmd)
         {
-            SqlConnection ConnetiongString = new SqlConnection("Data Source=.;Initial Catalog=saewin;Integrated Security=True");
+            SqlConnection ConnetiongString = new SqlConnection("Data Source=.;Initial Catalog=sporto;Integrated Security=True");
             ConnetiongString.Open();
 
             DataSet DS = new DataSet();

@@ -1,6 +1,6 @@
 ﻿namespace Aprendiendo_C
 {
-    partial class Form1
+    partial class Vlogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContra = new System.Windows.Forms.TextBox();
@@ -42,43 +40,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(127, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Usuario";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.label2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(110, 196);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Contraseña";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(274, 345);
+            this.linkLabel1.Location = new System.Drawing.Point(283, 350);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(80, 13);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "BryanTutoriales";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // txtUsuario
             // 
@@ -86,7 +57,7 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Verdana", 15.75F);
             this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsuario.Location = new System.Drawing.Point(60, 122);
+            this.txtUsuario.Location = new System.Drawing.Point(60, 118);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(244, 26);
             this.txtUsuario.TabIndex = 4;
@@ -101,7 +72,7 @@
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContra.Font = new System.Drawing.Font("Verdana", 15.75F);
             this.txtContra.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtContra.Location = new System.Drawing.Point(60, 199);
+            this.txtContra.Location = new System.Drawing.Point(60, 197);
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(244, 26);
             this.txtContra.TabIndex = 5;
@@ -112,12 +83,12 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(220)))));
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(147, 340);
+            this.btnSalir.Location = new System.Drawing.Point(147, 329);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(72, 23);
             this.btnSalir.TabIndex = 6;
@@ -178,7 +149,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Aprendiendo_C.Properties.Resources.Logo_Soluclick;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(306, 76);
             this.pictureBox1.TabIndex = 10;
@@ -196,8 +167,6 @@
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -213,8 +182,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContra;
