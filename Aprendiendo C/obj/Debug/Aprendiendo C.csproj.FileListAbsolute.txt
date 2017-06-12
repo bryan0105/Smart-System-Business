@@ -8,7 +8,11 @@ C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo 
 C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo C.pdb
 C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Libreriab.dll
 C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Libreriab.pdb
-C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
-C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo_C.Vlogin.resources
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo_C.VUsuarios.resources
 C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo_C.VPrincipal.resources
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\obj\Debug\Aprendiendo_C.Formbase.resources
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\BRYAN TORRES\Desktop\Aprendiendo C\Aprendiendo C\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml

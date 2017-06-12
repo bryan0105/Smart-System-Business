@@ -17,21 +17,30 @@ namespace Aprendiendo_C
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public static String Codigo = "";
+      public void button1_Click(object sender, EventArgs e)
         {
             try
-            {
-                string CMD = string.Format("Select COD_USUARIO, CLAVE from USUARIOS WHERE cod_usuario='{0}' AND clave='{1}'", txtUsuario.Text.Trim(), txtContra.Text.Trim());
-
+            {       //Este Metodo le da formato y consulta la tabla usuario en la base de datos y sustituye con lo validado de login.
+                string CMD = string.Format("Select * from USUARIOS WHERE cod_usuario='{0}' AND clave='{1}'", txtUsuario.Text.Trim(), txtContra.Text.Trim()); 
+               
+                // Este Data set ejecuta el comando de Sql de mas arriba y lo guarda en un DataSet
                 DataSet ds = Utileria.Ejecutar(CMD);
 
-                string cuenta = ds.Tables[0].Rows[0]["cod_usuario"].ToString().Trim();
-                string contra = ds.Tables[0].Rows[0]["clave"].ToString().Trim();
+                Codigo = ds.Tables[0].Rows[0]["num_usuario"].ToString().Trim();
 
+                // Estos de aca abajo almacena en un DataSet el nombre del usuario y la clave.
+               string cuenta = ds.Tables[0].Rows[0]["cod_usuario"].ToString().Trim();
+               string contra = ds.Tables[0].Rows[0]["clave"].ToString().Trim();
+
+                // Esto hace la validacion del usuario
                 if (cuenta == txtUsuario.Text.Trim() && contra == txtContra.Text.Trim())
                 {
-                    MessageBox.Show("Se ha iniciado sesión");
+
+                    VPrincipal VenPri = new VPrincipal();
+                    this.Hide();
+                    VenPri.Show();
+
 
                 }else
                 {
@@ -51,16 +60,6 @@ namespace Aprendiendo_C
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -71,22 +70,21 @@ namespace Aprendiendo_C
             
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtContra_TextChanged(object sender, EventArgs e)
         {
             txtContra.UseSystemPasswordChar = true;
-            
 
         }
+
+       /* private void txtContra_KeyPress(object sender,KeyPressEventArgs e)
+
+       /* {
+            if((int)e.KeyChar == (int)Keys.Enter)
+            {
+                this.button1_Click();
+
+            }
+        }*/
 
         private void txtUsuario_Click(object sender, EventArgs e)
         {
@@ -101,6 +99,26 @@ namespace Aprendiendo_C
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             
+        }
+
+        private void Vlogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtUsuario_TabStopChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContra_TabIndexChanged(object sender, EventArgs e)
+        {
+            txtContra.Text = "";
+        }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
